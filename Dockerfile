@@ -2,6 +2,6 @@ FROM tomcat:8-jre8
 
 MAINTAINER harry
 
-COPY ./simpleweb.war  /usr/local/tomcat/webapps
+ADD target/simpleweb.war simpleweb.war
 
 EXPOSE 8000
